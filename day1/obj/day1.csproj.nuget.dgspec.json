@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ammar.haider/bjss/aoc/day1/day1.csproj": {}
+    "/Users/ammar.haider/bjss/aoc2019/day1/day1.csproj": {}
   },
   "projects": {
-    "/Users/ammar.haider/bjss/aoc/day1/day1.csproj": {
+    "/Users/ammar.haider/bjss/aoc2019/day1/day1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ammar.haider/bjss/aoc/day1/day1.csproj",
+        "projectUniqueName": "/Users/ammar.haider/bjss/aoc2019/day1/day1.csproj",
         "projectName": "day1",
-        "projectPath": "/Users/ammar.haider/bjss/aoc/day1/day1.csproj",
+        "projectPath": "/Users/ammar.haider/bjss/aoc2019/day1/day1.csproj",
         "packagesPath": "/Users/ammar.haider/.nuget/packages/",
-        "outputPath": "/Users/ammar.haider/bjss/aoc/day1/obj/",
+        "outputPath": "/Users/ammar.haider/bjss/aoc2019/day1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ammar.haider/.nuget/NuGet/NuGet.Config"
