@@ -5,16 +5,40 @@ namespace day2
 {
     class Program
     {
+        private static int outPutToMatch = 19690720;
         static void Main(string[] args)
+        {
+            var intArr = GetOriginalInputArr();
+            intArr[1] = 12;
+            intArr[2] = 2;
+            ProcessNounsAndVerbs(intArr);
+        }
+
+        private static void ProcessNounsAndVerbs(int[] intArr)
+        {
+            for (int noun = 0; noun < 100; noun++)
+            {
+                for (int verb = 0; verb < 100; verb++)
+                {
+                    var opArr = GetOriginalInputArr();
+                    opArr[1] = noun;
+                    opArr[2] = verb;
+                    var result = ProcessOpCodes(opArr);
+                    if (result[0] == outPutToMatch)
+                    {
+                        Console.WriteLine(100 * noun + verb);
+                        return;
+                    }
+                }
+            }
+        }
+
+        private static int[] GetOriginalInputArr()
         {
             var text = File.ReadAllText("input.txt");
             var strArr = text.Split(',');
             var intArr = Array.ConvertAll(strArr, s => int.Parse(s));
-            intArr[1] = 12;
-            intArr[2] = 2;
-            var result = ProcessOpCodes(intArr);
-
-            Console.WriteLine(result[0]);
+            return intArr;
         }
 
         private static int[] ProcessOpCodes(int[] intArr)
